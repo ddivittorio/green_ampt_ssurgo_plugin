@@ -45,10 +45,20 @@ from qgis.PyQt.QtGui import QIcon
 # Add the green-ampt-estimation directory to the path
 cmd_folder = os.path.split(inspect.getfile(inspect.currentframe()))[0]
 plugin_folder = os.path.dirname(os.path.dirname(cmd_folder))
-green_ampt_estimation_path = os.path.join(
-    os.path.dirname(os.path.dirname(plugin_folder)), "green-ampt-estimation"
-)
-if green_ampt_estimation_path not in sys.path:
+
+# Try embedded location first (for deployed plugin), then development location
+green_ampt_estimation_paths = [
+    os.path.join(plugin_folder, "green_ampt_estimation"),  # Embedded in plugin
+    os.path.join(os.path.dirname(os.path.dirname(plugin_folder)), "green-ampt-estimation")  # Development
+]
+
+green_ampt_estimation_path = None
+for path in green_ampt_estimation_paths:
+    if os.path.exists(os.path.join(path, "green_ampt_tool")):
+        green_ampt_estimation_path = path
+        break
+
+if green_ampt_estimation_path and green_ampt_estimation_path not in sys.path:
     sys.path.insert(0, green_ampt_estimation_path)
 
 # Import green_ampt_tool modules

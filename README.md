@@ -15,6 +15,25 @@ This plugin provides a QGIS Processing toolbox algorithm that wraps the [green-a
 
 ## 📦 Installation
 
+### Method 1: Install from ZIP (Recommended for Users)
+
+1. **Download the Plugin Package:**
+   - Download the latest `green_ampt_plugin_v{VERSION}.zip` from the [Releases page](https://github.com/ddivittorio/qgis_green_ampt_plugin_jules/releases)
+   - Or create it yourself: run `./package_plugin.sh` (Linux/Mac) or `package_plugin.bat` (Windows)
+
+2. **Install in QGIS:**
+   - Open QGIS
+   - Go to `Plugins` → `Manage and Install Plugins`
+   - Click `Install from ZIP`
+   - Select the downloaded `green_ampt_plugin_v{VERSION}.zip` file
+   - Click `Install Plugin`
+
+3. **Enable the Plugin:**
+   - In the Plugin Manager, go to the `Installed` tab
+   - Check the box next to "Green-Ampt Parameter Generator"
+
+### Method 2: Manual Installation (For Developers)
+
 ### Prerequisites
 
 - QGIS 3.18 or later

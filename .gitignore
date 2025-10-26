@@ -51,3 +51,6 @@ test_aoi/
 tmp/
 temp/
 *.tmp
+
+# Plugin packages
+green_ampt_plugin_v*.zip
