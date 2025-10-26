@@ -115,26 +115,24 @@ def check_dependencies():
     """Check Python dependencies"""
     print("\nChecking Python dependencies...")
     
-    required_packages = [
-        "geopandas",
-        "rasterio",
-        "pandas",
-        "numpy",
-        "requests",
-        "yaml",
-    ]
+    # Map pip package names to import names
+    required_packages = {
+        "geopandas": "geopandas",
+        "rasterio": "rasterio",
+        "pandas": "pandas",
+        "numpy": "numpy",
+        "requests": "requests",
+        "pyyaml": "yaml",
+    }
     
     missing_packages = []
-    for package in required_packages:
+    for pip_name, import_name in required_packages.items():
         try:
-            if package == "yaml":
-                __import__("yaml")
-            else:
-                __import__(package)
-            print(f"  ✓ {package} is installed")
+            __import__(import_name)
+            print(f"  ✓ {pip_name} is installed")
         except ImportError:
-            missing_packages.append(package)
-            print(f"  ✗ {package} is NOT installed")
+            missing_packages.append(pip_name)
+            print(f"  ✗ {pip_name} is NOT installed")
     
     if missing_packages:
         print(f"\n⚠ Warning: {len(missing_packages)} required packages are missing!")

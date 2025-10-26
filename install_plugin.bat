@@ -29,7 +29,11 @@ set "TARGET_DIR=%QGIS_PLUGINS_DIR%\%PLUGIN_NAME%"
 if exist "%TARGET_DIR%" (
     echo Warning: Plugin already exists at %TARGET_DIR%
     set /p REPLY="Do you want to overwrite it? (y/n) "
-    if /i not "%REPLY%"=="y" (
+    if not defined REPLY (
+        echo Error: No input provided
+        exit /b 1
+    )
+    if /i not "%REPLY%"=="y" if /i not "%REPLY%"=="Y" (
         echo Installation cancelled.
         exit /b 1
     )

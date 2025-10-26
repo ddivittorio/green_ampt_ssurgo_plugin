@@ -99,7 +99,7 @@ Suitable contributions include:
 ### Core Functionality (green-ampt-estimation Repository)
 
 For changes to the core parameter estimation logic, contribute to:
-https://github.com/ddivittorio/green-ampt-estimation
+[green-ampt-estimation repository](https://github.com/ddivittorio/green-ampt-estimation)
 
 Examples:
 - New parameter estimation methods

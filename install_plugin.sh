@@ -39,7 +39,11 @@ TARGET_DIR="$QGIS_PLUGINS_DIR/$PLUGIN_NAME"
 
 if [ -d "$TARGET_DIR" ]; then
     echo "Warning: Plugin already exists at $TARGET_DIR"
-    read -p "Do you want to overwrite it? (y/n) " -n 1 -r
+    read -p "Do you want to overwrite it? (y/n) " -n 1 -r || {
+        echo
+        echo "Error: Failed to read input"
+        exit 1
+    }
     echo
     if [[ ! $REPLY =~ ^[Yy]$ ]]; then
         echo "Installation cancelled."
