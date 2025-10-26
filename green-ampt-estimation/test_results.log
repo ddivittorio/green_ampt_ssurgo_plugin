@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.7, pytest-7.4.3, pluggy-1.0.0
+rootdir: /home/damien/Documents/Projects/Green_Ampt_Estimation
+configfile: pytest.ini
+plugins: dotenv-0.5.2, asyncio-0.21.1, cov-4.1.0, html-4.1.1, metadata-3.1.1, Faker-25.2.0, anyio-3.7.1
+asyncio: mode=Mode.STRICT
+collected 117 items
+
+green_ampt_tool/tests/test_config.py .................                   [ 14%]
+green_ampt_tool/tests/test_data_access.py ........                       [ 21%]
+green_ampt_tool/tests/test_export.py .........                           [ 29%]
+green_ampt_tool/tests/test_lookup_us.py .....                            [ 33%]
+green_ampt_tool/tests/test_parameters.py ............................... [ 59%]
+...                                                                      [ 62%]
+green_ampt_tool/tests/test_processing.py ............................... [ 88%]
+                                                                         [ 88%]
+green_ampt_tool/tests/test_rasterization.py .............                [100%]
+
+============================= 117 passed in 1.06s ==============================

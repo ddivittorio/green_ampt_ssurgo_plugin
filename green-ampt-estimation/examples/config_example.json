@@ -1,0 +1,26 @@
+{
+  "description": "Green-Ampt Pipeline Configuration Example (JSON)",
+  
+  "aoi": "path/to/aoi.shp",
+  
+  "_comment_aoi": "For multi-layer formats (GeoPackage, Geodatabase), use: 'path/to/data.gpkg:layer_name' or set aoi_layer separately",
+  "aoi_layer": null,
+  
+  "output_dir": "outputs",
+  "output_resolution": 10.0,
+  "output_crs": null,
+  "output_prefix": "",
+  
+  "data_source": "pysda",
+  "pysda_timeout": 300,
+  
+  "_comment_local_ssurgo": "Required when data_source is 'local'",
+  "local_ssurgo": null,
+  
+  "depth_limit_cm": 10.0,
+  "export_raw_data": true,
+  "raw_data_dir": null,
+  
+  "use_lookup_table": true,
+  "use_hsg_lookup": false
+}

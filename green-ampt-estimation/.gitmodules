@@ -1,0 +1,3 @@
+[submodule "external/pysda"]
+	path = external/pysda
+	url = https://github.com/ncss-tech/pysda.git
