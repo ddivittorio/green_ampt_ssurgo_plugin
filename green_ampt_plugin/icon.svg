@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+  
+  <!-- Water droplet icon -->
+  <path d="M 32 15 C 32 15 24 28 24 36 C 24 41.5 27.5 46 32 46 C 36.5 46 40 41.5 40 36 C 40 28 32 15 32 15 Z" 
+        fill="#1976D2" stroke="#0D47A1" stroke-width="1.5"/>
+  
+  <!-- Soil layer representation -->
+  <rect x="16" y="48" width="32" height="3" fill="#8D6E63" stroke="#5D4037" stroke-width="0.5"/>
+  <rect x="16" y="51" width="32" height="3" fill="#6D4C41" stroke="#4E342E" stroke-width="0.5"/>
+</svg>

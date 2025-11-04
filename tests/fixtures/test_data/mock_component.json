@@ -1,0 +1,37 @@
+[
+  {
+    "mukey": "123456",
+    "cokey": "111",
+    "comppct_r": 85,
+    "hydgrp": "B",
+    "majcompflag": "Yes"
+  },
+  {
+    "mukey": "123456",
+    "cokey": "112",
+    "comppct_r": 15,
+    "hydgrp": "C",
+    "majcompflag": "No"
+  },
+  {
+    "mukey": "789012",
+    "cokey": "221",
+    "comppct_r": 70,
+    "hydgrp": "A",
+    "majcompflag": "Yes"
+  },
+  {
+    "mukey": "789012",
+    "cokey": "222",
+    "comppct_r": 30,
+    "hydgrp": "B",
+    "majcompflag": "No"
+  },
+  {
+    "mukey": "345678",
+    "cokey": "331",
+    "comppct_r": 90,
+    "hydgrp": "C",
+    "majcompflag": "Yes"
+  }
+]

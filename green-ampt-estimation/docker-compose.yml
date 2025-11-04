@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  green-ampt:
+    build: .
+    container_name: green-ampt-app
+    volumes:
+      # Mount the outputs directory so generated files persist
+      - ./outputs:/app/outputs
+      # Mount test data for development
+      - ./test_aoi:/app/test_aoi:ro
+    ports:
+      - "8890:8888"
+    environment:
+      - PYTHONPATH=/app
+    command: ["python", "green_ampt.py", "--help"]
+
+  # Optional: Jupyter notebook service
+  notebook:
+    build: .
+    container_name: green-ampt-notebook
+    volumes:
+      - ./outputs:/app/outputs
+      - ./test_aoi:/app/test_aoi:ro
+      - .:/app
+    ports:
+      - "8891:8888"
+    environment:
+      - PYTHONPATH=/app
+    command: ["conda", "run", "-n", "green-ampt", "jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token='greenampt'", "--NotebookApp.password=''"]
+    profiles:
+      - notebook

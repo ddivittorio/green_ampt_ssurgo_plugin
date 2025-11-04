@@ -1,0 +1,52 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache
+.coverage
+.tox
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.venv
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.egg-info
+dist/
+build/
+
+# Documentation build
+docs/_build
+
+# Test outputs and temporary files
+outputs/
+*.tmp
+*.temp
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore

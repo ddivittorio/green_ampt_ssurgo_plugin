@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# QGIS
+*.qgs~
+*.qgz~
+
+# Test outputs
+test_outputs/
+outputs/
+test_aoi/
+*.log
+
+# Compiled files
+*.pyc
+*.pyo
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Plugin packages
+green_ampt_plugin_v*.zip
+
+# Test output directories
+test_output*/
+test_ouput*/
+
+# Development tools and debugging files
+dev_tools/

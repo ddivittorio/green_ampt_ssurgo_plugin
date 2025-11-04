@@ -1,0 +1,12 @@
+# Minimal Green-Ampt Configuration
+# Only required fields
+
+aoi: "my_study_area.shp"
+output_dir: "outputs"
+
+# All other options will use defaults:
+# - output_resolution: 10.0 meters
+# - output_crs: inherited from AOI
+# - data_source: pysda (online SSURGO data)
+# - depth_limit_cm: 10.0 cm
+# - use_lookup_table: true (Rawls/SWMM method)

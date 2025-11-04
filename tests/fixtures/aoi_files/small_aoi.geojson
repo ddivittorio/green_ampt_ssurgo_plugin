@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.1,
+              32.7
+            ],
+            [
+              -97.0,
+              32.7
+            ],
+            [
+              -97.0,
+              32.8
+            ],
+            [
+              -97.1,
+              32.8
+            ],
+            [
+              -97.1,
+              32.7
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1,
+        "name": "Small Test AOI",
+        "area_ha": 100
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# GeoPackage Example
+# Using a GeoPackage with a specific layer
+
+aoi: "data/watersheds.gpkg:watershed_1"
+output_dir: "outputs/watershed_1"
+output_resolution: 5.0
+output_prefix: "ws1_"

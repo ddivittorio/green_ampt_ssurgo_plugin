@@ -1,0 +1,32 @@
+[
+  {
+    "mukey": "123456",
+    "ks": 8.5,
+    "theta_s": 0.45,
+    "theta_r": 0.08,
+    "alpha": 0.012,
+    "n": 1.8,
+    "psi": 120.0,
+    "texture": "SL"
+  },
+  {
+    "mukey": "789012",
+    "ks": 20.0,
+    "theta_s": 0.4,
+    "theta_r": 0.06,
+    "alpha": 0.025,
+    "n": 2.2,
+    "psi": 85.0,
+    "texture": "SL"
+  },
+  {
+    "mukey": "345678",
+    "ks": 2.8,
+    "theta_s": 0.55,
+    "theta_r": 0.12,
+    "alpha": 0.008,
+    "n": 1.4,
+    "psi": 280.0,
+    "texture": "C"
+  }
+]

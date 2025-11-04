@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Green-Ampt Estimation Toolkit"
+abstract: "Generate spatially distributed Green-Ampt infiltration parameters from SSURGO soil data"
+type: software
+authors:
+  - family-names: "DiVittorio"
+    given-names: "Damien"
+repository-code: "https://github.com/ddivittorio/green-ampt-estimation"
+license: GPL-3.0-or-later
+keywords:
+  - hydrology
+  - soil science
+  - infiltration
+  - Green-Ampt
+  - SSURGO
+  - geospatial
+
+references:
+  - type: software
+    title: "PySDA - Python interface to USDA-NRCS Soil Data Access"
+    authors:
+      - family-names: "Ferguson"
+        given-names: "Charles"
+    repository-code: "https://github.com/ncss-tech/pysda"
+    notes: "This project vendors PySDA in the external/pysda directory to provide access to NRCS Soil Data Access (SDA) for live SSURGO data queries. PySDA is licensed under GPL-3.0."

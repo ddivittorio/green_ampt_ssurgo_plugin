@@ -1,0 +1,20 @@
+[
+  {
+    "mukey": "123456",
+    "musym": "ABC",
+    "muname": "Test Soil A",
+    "area_sqm": 10000
+  },
+  {
+    "mukey": "789012",
+    "musym": "DEF",
+    "muname": "Test Soil B",
+    "area_sqm": 15000
+  },
+  {
+    "mukey": "345678",
+    "musym": "GHI",
+    "muname": "Test Soil C",
+    "area_sqm": 8000
+  }
+]

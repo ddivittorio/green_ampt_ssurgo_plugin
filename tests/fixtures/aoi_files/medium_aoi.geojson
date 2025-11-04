@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.2,
+              32.6
+            ],
+            [
+              -96.8,
+              32.6
+            ],
+            [
+              -96.8,
+              33.0
+            ],
+            [
+              -97.2,
+              33.0
+            ],
+            [
+              -97.2,
+              32.6
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1,
+        "name": "Medium Test AOI",
+        "area_ha": 1000
+      }
+    }
+  ]
+}
