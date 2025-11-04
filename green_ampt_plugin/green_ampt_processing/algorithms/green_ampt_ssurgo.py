@@ -560,8 +560,7 @@ class GreenAmptSsurgo(GreenAmptAlgorithm):
             <li><b>Area of Interest (AOI):</b> Polygon vector layer defining the study area</li>
             <li><b>Data Source:</b> Choose between live PySDA queries or local SSURGO files</li>
             <li><b>Parameter Method:</b> Choose estimation method:
-                <ul>ow
-Skip
+                <ul>
                 <li>Texture Lookup: Uses USDA texture classes with Rawls/SWMM lookup table</li>
                 <li>HSG Lookup: Uses NRCS Hydrologic Soil Groups</li>
                 <li>Pedotransfer Functions: Calculates from sand/clay percentages</li>
